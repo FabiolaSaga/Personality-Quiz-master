@@ -24,9 +24,9 @@ Personality Quiz to find out which beer you are.
 
 ## Questions 
 <p float="left">
-  <img src="https://github.com/FabiolaSaga/PersonalityQuiz-master/blob/master/Screen%20Shot%202019-03-03%20at%2010.40.41%20AM.png" width="280" />
-  <img src="https://github.com/FabiolaSaga/PersonalityQuiz-master/blob/master/Screen%20Shot%202019-03-03%20at%2010.40.57%20AM.png" width="280" /> 
-  <img src="https://github.com/FabiolaSaga/PersonalityQuiz-master/blob/master/Screen%20Shot%202019-03-03%20at%2010.41.10%20AM.png" width="280" />
+  <img src="https://github.com/FabiolaSaga/PersonalityQuiz-master/blob/master/Question1.PNG" width="280" />
+  <img src="https://github.com/FabiolaSaga/PersonalityQuiz-master/blob/master/Questoin2.PNG" width="280" /> 
+  <img src="https://github.com/FabiolaSaga/PersonalityQuiz-master/blob/master/Question3.PNG" width="280" />
 </p>
  
 ## Result page

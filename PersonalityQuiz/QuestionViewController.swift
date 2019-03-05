@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class QuestionViewController: UIViewController {
     
     @IBOutlet weak var questionLabel: UILabel!
@@ -99,6 +100,8 @@ class QuestionViewController: UIViewController {
     @IBAction func multipleAnswerButtonPressed() {
         let currentAnswers = questions[questionIndex].answers
         
+        
+        
         if multiSwitch1.isOn {
             answerChosen.append(currentAnswers[0])
         }
@@ -111,6 +114,7 @@ class QuestionViewController: UIViewController {
         if multiSwitch4.isOn {
             answerChosen.append(currentAnswers[3])
         }
+        
         
         nextQuestion()
         

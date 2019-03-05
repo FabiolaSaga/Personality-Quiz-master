@@ -116,7 +116,7 @@
                                     <constraint firstAttribute="height" constant="189" id="fAK-Ui-qtl"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="kGF-Jp-aZb" userLabel="Login View">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="kGF-Jp-aZb" userLabel="Login View">
                                 <rect key="frame" x="68" y="308" width="239" height="184"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3zZ-aL-x2C" userLabel="Login View">
@@ -155,6 +155,24 @@
                                     <constraint firstAttribute="height" constant="184" id="Wq7-Vh-uyQ"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXN-Kl-aT0">
+                                <rect key="frame" x="68" y="471" width="239" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.19471867801737044" green="0.32900276397021538" blue="0.73788467639593902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
+                                <state key="normal" title="Sign in with facebook">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="facebookLoginWithSender:" destination="2Md-Ob-XN8" eventType="touchUpInside" id="NLO-re-b0i"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -284,7 +302,7 @@
         <!--Home View Controller-->
         <scene sceneID="z14-4f-WeA">
             <objects>
-                <viewController id="FiY-gE-FOt" customClass="HomeViewController" customModule="PersonalityQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainView" id="FiY-gE-FOt" customClass="HomeViewController" customModule="PersonalityQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="09S-ro-kxV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -773,7 +791,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="6qQ-n9-ZNu"/>
-        <segue reference="cq8-R7-qK6"/>
+        <segue reference="gL4-kT-8bf"/>
         <segue reference="QOm-or-q5o"/>
         <segue reference="W65-Dd-atH"/>
     </inferredMetricsTieBreakers>

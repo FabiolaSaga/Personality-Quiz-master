@@ -20,6 +20,7 @@
 		F3831F802229D89500001E66 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3831F7F2229D89500001E66 /* QuestionViewController.swift */; };
 		F3831F822229D89D00001E66 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3831F812229D89D00001E66 /* ResultsViewController.swift */; };
 		F3831F84222AAF2400001E66 /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3831F83222AAF2400001E66 /* QuestionData.swift */; };
+		F3BA530D222F59FE00A19964 /* beerVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F3BA530C222F59FE00A19964 /* beerVideo.mp4 */; };
 		F3F44105222B468200BF9144 /* Drinking beer.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F3F44104222B468200BF9144 /* Drinking beer.mp4 */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		F3831F7F2229D89500001E66 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		F3831F812229D89D00001E66 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		F3831F83222AAF2400001E66 /* QuestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
+		F3BA530C222F59FE00A19964 /* beerVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = beerVideo.mp4; sourceTree = "<group>"; };
 		F3F44104222B468200BF9144 /* Drinking beer.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Drinking beer.mp4"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				F3F44104222B468200BF9144 /* Drinking beer.mp4 */,
+				F3BA530C222F59FE00A19964 /* beerVideo.mp4 */,
 				F3617CBB2228AFEC007E4D3E /* AppDelegate.swift */,
 				F3617CBD2228AFEC007E4D3E /* StartviewController.swift */,
 				F3617CBF2228AFEC007E4D3E /* Main.storyboard */,
@@ -173,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3617CC62228AFED007E4D3E /* LaunchScreen.storyboard in Resources */,
+				F3BA530D222F59FE00A19964 /* beerVideo.mp4 in Resources */,
 				F3617CC32228AFED007E4D3E /* Assets.xcassets in Resources */,
 				F3617CC12228AFEC007E4D3E /* Main.storyboard in Resources */,
 				F3617CD62228FC2B007E4D3E /* GoogleService-Info.plist in Resources */,

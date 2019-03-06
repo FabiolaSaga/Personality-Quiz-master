@@ -155,10 +155,13 @@
                                     <constraint firstAttribute="height" constant="184" id="Wq7-Vh-uyQ"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXN-Kl-aT0">
-                                <rect key="frame" x="68" y="471" width="239" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXN-Kl-aT0">
+                                <rect key="frame" x="68" y="492" width="239" height="35"/>
                                 <color key="backgroundColor" red="0.19471867801737044" green="0.32900276397021538" blue="0.73788467639593902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="239" id="0zi-Hp-T5R"/>
+                                    <constraint firstAttribute="height" constant="35" id="QKU-Ia-gzx"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                 <state key="normal" title="Sign in with facebook">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -181,7 +184,10 @@
                             <constraint firstItem="UXi-0v-POK" firstAttribute="top" secondItem="h7o-PK-iWt" secondAttribute="topMargin" constant="47" id="COk-3c-880"/>
                             <constraint firstItem="UXi-0v-POK" firstAttribute="centerX" secondItem="h7o-PK-iWt" secondAttribute="centerX" id="Idg-pN-GSY"/>
                             <constraint firstItem="UXi-0v-POK" firstAttribute="leading" secondItem="h7o-PK-iWt" secondAttribute="leadingMargin" id="Uxs-rW-Xsc"/>
+                            <constraint firstItem="UXi-0v-POK" firstAttribute="centerX" secondItem="h7o-PK-iWt" secondAttribute="centerX" id="deJ-Kd-NOl"/>
+                            <constraint firstItem="lXN-Kl-aT0" firstAttribute="centerX" secondItem="h7o-PK-iWt" secondAttribute="centerX" id="hqc-mw-scW"/>
                             <constraint firstItem="kGF-Jp-aZb" firstAttribute="centerX" secondItem="h7o-PK-iWt" secondAttribute="centerX" id="rXr-Gw-IwS"/>
+                            <constraint firstItem="lXN-Kl-aT0" firstAttribute="top" secondItem="kGF-Jp-aZb" secondAttribute="bottom" id="tN2-Wi-Cux"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="twy-Ke-7Mp"/>
                     </view>
@@ -276,11 +282,34 @@
                                     <constraint firstAttribute="height" constant="126" id="P9D-UR-ls8"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1Q-oO-Rj2">
+                                <rect key="frame" x="68" y="423" width="239" height="35"/>
+                                <color key="backgroundColor" red="0.19471867800000001" green="0.329002764" blue="0.73788467639999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="7Xx-98-oWU"/>
+                                    <constraint firstAttribute="width" constant="239" id="cFl-gL-3iK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
+                                <state key="normal" title="Sign up with facebook">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="facebookLoginWithSender:" destination="Sja-H1-G2n" eventType="touchUpInside" id="9lb-72-e1M"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="0mV-yw-tV2" firstAttribute="top" secondItem="c2q-oz-joO" secondAttribute="bottom" constant="8" id="OP3-Y7-5K2"/>
                             <constraint firstItem="c2q-oz-joO" firstAttribute="top" secondItem="udO-pX-mgr" secondAttribute="top" constant="76" id="R3p-5d-tpI"/>
+                            <constraint firstItem="d1Q-oO-Rj2" firstAttribute="centerX" secondItem="udO-pX-mgr" secondAttribute="centerX" id="V6a-vX-n0h"/>
+                            <constraint firstItem="d1Q-oO-Rj2" firstAttribute="top" secondItem="0mV-yw-tV2" secondAttribute="bottom" constant="29" id="Zum-0D-SHu"/>
                             <constraint firstItem="c2q-oz-joO" firstAttribute="centerX" secondItem="udO-pX-mgr" secondAttribute="centerX" id="c13-7M-BgA"/>
                             <constraint firstItem="0mV-yw-tV2" firstAttribute="top" secondItem="76s-ER-ci3" secondAttribute="top" constant="146" id="l23-U6-TKQ"/>
                             <constraint firstItem="0mV-yw-tV2" firstAttribute="centerX" secondItem="udO-pX-mgr" secondAttribute="centerX" id="w96-po-gyd"/>
@@ -791,7 +820,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="6qQ-n9-ZNu"/>
-        <segue reference="gL4-kT-8bf"/>
+        <segue reference="cq8-R7-qK6"/>
         <segue reference="QOm-or-q5o"/>
         <segue reference="W65-Dd-atH"/>
     </inferredMetricsTieBreakers>

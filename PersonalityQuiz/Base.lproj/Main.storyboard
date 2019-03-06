@@ -751,13 +751,36 @@
                                     <constraint firstAttribute="trailing" secondItem="maS-zI-ccq" secondAttribute="trailing" id="947-2n-KSn"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNR-rI-xCJ">
+                                <rect key="frame" x="147.5" y="408" width="80" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6xu-pX-oRg"/>
+                                    <constraint firstAttribute="width" constant="80" id="A5N-QH-kAq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="QRA-gr-39k" kind="unwind" unwindAction="unwindToQuizIntroductionWithSegue:" id="RLn-D7-cZe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="or0-1A-3ai" firstAttribute="centerY" secondItem="DX7-KV-vg2" secondAttribute="centerY" id="1OI-kF-mVB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="or0-1A-3ai" secondAttribute="trailing" id="Gao-p1-r5T"/>
+                            <constraint firstItem="tNR-rI-xCJ" firstAttribute="centerX" secondItem="DX7-KV-vg2" secondAttribute="centerX" id="OyU-IG-568"/>
                             <constraint firstItem="or0-1A-3ai" firstAttribute="centerX" secondItem="DX7-KV-vg2" secondAttribute="centerX" id="lpq-OP-Ijd"/>
                             <constraint firstItem="or0-1A-3ai" firstAttribute="leading" secondItem="DX7-KV-vg2" secondAttribute="leadingMargin" id="oYo-He-zmB"/>
+                            <constraint firstItem="tNR-rI-xCJ" firstAttribute="top" secondItem="or0-1A-3ai" secondAttribute="bottom" constant="43" id="usx-oH-Adg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XRh-lY-159"/>
                     </view>

@@ -36,7 +36,7 @@ class HomeViewController: UIViewController {
     }
     
     private func setUpView() {
-        let path = URL(fileURLWithPath: Bundle.main.path(forResource: "Drinking beer", ofType: "mp4")!)
+        let path = URL(fileURLWithPath: Bundle.main.path(forResource: "beerVideo", ofType: "mp4")!)
         let player = AVPlayer(url: path)
         
         let newLayer = AVPlayerLayer(player: player)
@@ -44,7 +44,15 @@ class HomeViewController: UIViewController {
         self.videoView.layer.addSublayer(newLayer)
         newLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
         
+        loopVideo(videoPlayer: player)
         player.play()
+    }
+    
+    func loopVideo(videoPlayer: AVPlayer) {
+        NotificationCenter.default.addObserver(forName: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: nil, queue: nil) { notification in
+            videoPlayer.seek(to: CMTime.zero)
+            videoPlayer.play()
+        }
     }
 
     

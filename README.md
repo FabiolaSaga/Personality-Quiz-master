@@ -8,12 +8,12 @@ Personality Quiz to find out which beer you are.
 
 ## Login screen
 <p float="left">
-  <img src="https://github.com/FabiolaSaga/PersonalityQuiz/blob/master/IMG_6242.PNG" width="300" />
+  <img src="https://github.com/FabiolaSaga/PersonalityQuiz-master/blob/master/login.PNG" width="300" />
   </p>
 
 ## Sign Up screen
 <p float="left">
-  <img src="https://github.com/FabiolaSaga/PersonalityQuiz/blob/master/IMG_6241.PNG" width="300" />
+  <img src="https://github.com/FabiolaSaga/PersonalityQuiz-master/blob/master/sign%20up.PNG" width="300" />
   </p>
 
 ## Quiz start screen
@@ -35,4 +35,12 @@ Personality Quiz to find out which beer you are.
   </p>
 
 ### Technologies used: 
-UIKit, AVKit, AVFoundation, Firebase, Xcode, Swift, Interface Builder
+<li>UIKit</li>
+<li>AVKit</li>
+<li>AVFoundation</li>
+<li>Firebase Authentication</li>
+<li>FBSDKLoginKit</li>
+<li>FBSDKCoreKit</li> 
+<li>Xcode</li>
+<li>Swift</li>
+<li>Interface Builder</li>

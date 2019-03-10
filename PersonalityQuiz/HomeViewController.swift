@@ -27,6 +27,7 @@ class HomeViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+      // Rather than calling out to a parent nav controller on lifecycle events, we can move the logic of whether-or-not the nav's bar should be hidden for a given controller into the nav controller itself.
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     

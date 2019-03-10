@@ -9,6 +9,10 @@
 import UIKit
 
 
+// Some of these layouts get pretty crampped on an SE.
+
+// It'd probably make more sense for each page of questions to be its own view controller (of,if you want to be more generalized, each question type to have its own controller?) instead of putting them all in the same controller and showing/hiding different sets of them.
+
 class QuestionViewController: UIViewController {
     
     @IBOutlet weak var questionLabel: UILabel!
@@ -40,7 +44,9 @@ class QuestionViewController: UIViewController {
 
     var questionIndex = 0
     var answerChosen: [Answer] = []
-    
+  // Love how data-driven this is! It feels like we're half-way towards a very open-ended solution. To complete it, we'd need to be able to build and present a view based soley on the content of our question data (and populate it with any exising answers).
+  // Feels like there should some sort of coordinator that owns the list of Questions, is responsible for creating the view for any given Question, and can tabulate answers.
+  // The question views could take a Question, an answer, and have forward and backawards actions that call on the coordinator.
     var questions: [Question] = [
         Question(text: "Which season do you prefer?", type: .single, answers: [
            Answer(text: "Spring", type: .lager),

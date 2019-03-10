@@ -10,6 +10,8 @@ import UIKit
 import Firebase
 import FBSDKCoreKit
 
+// LOTS of warnings in this project. Generally there should be zero. If there are any of these that are confusing, that's definitely something we can work on when pairing.
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -17,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
 
-
+  //Something bad has happened here. It looks like two functions got squinched together? Note that Swift is warning us about this by saying “Code after 'return' will never be executed”.
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()

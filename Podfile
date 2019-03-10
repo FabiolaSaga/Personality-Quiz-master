@@ -6,6 +6,7 @@ target 'PersonalityQuiz' do
  pod 'Firebase/Core'
  pod 'Firebase/Auth'
  pod 'FBSDKLoginKit'
+ # Doesn't seem like we need/use these?
  pod 'Bolts'
  pod 'FBSDKCoreKit'
 
